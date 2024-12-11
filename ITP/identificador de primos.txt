@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int main() {
+    unsigned short int N = 0;
+    scanf("%hu", &N);
+    
+    int numbers[N];
+    
+    for(size_t i = 0; i < N; i++){
+        scanf("%d", &numbers[i]);
+    }
+    
+    for(size_t j = 0; j < N; j++){
+        if(numbers[j] == 1 || numbers[j] == 2){
+                printf("%d é primo\n", numbers[j]);
+                continue;
+            }
+        for(size_t k = 2; k < numbers[j]; k++){
+            if(numbers[j] % k == 0){
+                printf("%d é composto\n", numbers[j]);
+                break;
+            }
+            
+            if(k == numbers[j]-1 && numbers[j] % k != 0){
+                printf("%d é primo\n", numbers[j]);
+                break;
+            }
+        }
+    }
+    
+    return 0;
+}

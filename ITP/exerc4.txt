@@ -1,0 +1,19 @@
+#include <stdio.h>
+ 
+ int main(){
+     printf("Qual o seu nome amigão? ");
+     char name[16];
+     scanf("%s",name);
+     
+     printf("\nQual a sua idade amigão? ");
+     unsigned short int age = 0;
+     scanf("%hu", &age);
+     
+     if(5 <= age && age <= 10){printf("\n%s: Infantil", name);}
+     else if(11 <= age && age <= 15){printf("\n%s: Juvenil", name);}
+     else if(16 <= age && age <= 20){printf("\n%s: Junior", name);}
+     else if(21 <= age && age <= 25){printf("\n%s: Profissional", name);}
+     else{printf("idade fora do intervalo permitido");}
+     
+     return 0;
+ }

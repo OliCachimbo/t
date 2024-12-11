@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+int main(){
+    int A = 0;
+    scanf("%d" , &A);
+    
+    int B = 0;
+    scanf("%d", &B);
+    
+    int j = 1;
+    
+    if(A > B){
+        int i = B + 1;
+        while(A >= B){
+            B = B + i;
+            i = i + 1;
+            j = j + 1;
+        }
+    }
+    else{
+        int i = A + 1;
+        while(B >= A){
+            A = A + i;
+            i = i + 1;
+            j = j + 1;
+        }
+    }
+    
+    printf("%d\n", j);
+    
+    
+    return 0;
+}

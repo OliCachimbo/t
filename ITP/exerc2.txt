@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main(){
+    int A = 0;
+    scanf("%i", &A);
+    
+    int B = 0;
+    scanf("%i", &B);
+    
+    int C = 0;
+    scanf("%i", &C);
+    
+    int sum = A + B + C;
+    int prod = A * B * C;
+    
+    printf("%i %i", sum, prod);
+}

@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main()
+{
+    printf("how much number do you wanna make the average? ");
+    int n = 0;
+    scanf("%d", &n);
+    
+    int i = n;
+    
+    float average = 0;
+    
+    float p = 0;
+    
+    while(i > 0){
+        scanf("%f", &p);
+        average = average + p/n;
+        i--;
+    }
+    printf("%f", average);
+    return 0;
+}
